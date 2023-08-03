@@ -32,6 +32,19 @@
     
     <h3 style="font-family: courier; background-color: #ffddcc">Where I'm from</h3>
     <p>I live in <del>Villanova, PA.</del></p>
+        <script>
+       //$("p") <-------this will reference all <p> tags
+      //$("#job") <------ this will reference all id jobs
+        //same thing with classes
+        //use jQuery to listen for button click and then it will toggle the hidden job message
+
+        $("button#job").hover(
+            function() {
+                $("p#job").toggle();
+            }
+        );
+        
+    </script>
     <h3>Where I go to school</h3>
      <div id="dartmouth">
         <img id="dartmouth-img" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Dartmouth_College_shield.svg/1200px-Dartmouth_College_shield.svg.png">
